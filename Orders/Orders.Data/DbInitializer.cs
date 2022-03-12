@@ -48,16 +48,6 @@ namespace Orders.Data
 
             context.Items.AddRange(items);
             context.SaveChanges();
-
-            //var orders = new Order[]
-            //{
-            //    new Order{Client = "Иванов", DateCreating = DateTime.Parse("2022-09-03")},
-            //    new Order{Client = "Петров", DateCreating = DateTime.Parse("2022-09-04")},
-            //    new Order{Client = "Сидоров", DateCreating = DateTime.Parse("2022-09-05")}
-            //};
-
-            //context.Orders.AddRange(orders);
-            //context.SaveChanges();
         }
     }
 }
