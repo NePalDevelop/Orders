@@ -48,5 +48,19 @@ namespace Orders.Controllers
 
             return Mapper.MapOrderFromData(order);
         }
+
+        // Delete <OrderController>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Order>> DeleteItem([FromBody] int[] productIds, int id)
+        {
+            if (!ModelState.IsValid || id < 0)
+            {
+                return ValidationProblem();
+            }
+
+            var order = await _orderStore.DeleteProducts(productIds, id);
+
+            return Mapper.MapOrderFromData(order);
+        }
     }
 }

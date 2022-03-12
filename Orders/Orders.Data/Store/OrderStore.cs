@@ -74,31 +74,18 @@ namespace Orders.Data.Store
             return await GetOrder(id);
         }
 
-        public async Task<Order> DeleteProduct(int productId, int orderId)
+        public async Task<Order> DeleteProducts(int [] productIds, int orderId)
         {
-            var order = await _context.Orders.Include(o => o.Items)
-                .ThenInclude(i => i.Product).FirstOrDefaultAsync(o => o.Id == orderId);
+            var order = await _context.Orders.Where(o => o.Id == orderId).Include(o => o.Items).FirstOrDefaultAsync();
 
-            if (order == null) return null;
-
-            var isExistItem = false;
-            
-            foreach (var i in order.Items)
+            if(order == null)
             {
-                if (i.ProductId == productId)
-                {
-                    order.Items.Remove(i);
-                    isExistItem = true;
-                    break;
-                }
-            };
-
-            if (!isExistItem)
-            {
-                _context.Update(order);
-
-                await _context.SaveChangesAsync();
+                return null;
             }
+
+            order.Items.RemoveAll(i => productIds.Contains(i.ProductId));
+
+            await _context.SaveChangesAsync();
 
             return await GetOrder(orderId);
         }
