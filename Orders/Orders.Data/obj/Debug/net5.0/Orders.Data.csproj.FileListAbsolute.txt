@@ -1,0 +1,12 @@
+D:\C#\repos\Orders\Orders\Orders.Data\bin\Debug\net5.0\Orders.Data.deps.json
+D:\C#\repos\Orders\Orders\Orders.Data\bin\Debug\net5.0\Orders.Data.dll
+D:\C#\repos\Orders\Orders\Orders.Data\bin\Debug\net5.0\ref\Orders.Data.dll
+D:\C#\repos\Orders\Orders\Orders.Data\bin\Debug\net5.0\Orders.Data.pdb
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.csproj.AssemblyReference.cache
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.AssemblyInfoInputs.cache
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.AssemblyInfo.cs
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.csproj.CoreCompileInputs.cache
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.dll
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\ref\Orders.Data.dll
+D:\C#\repos\Orders\Orders\Orders.Data\obj\Debug\net5.0\Orders.Data.pdb
