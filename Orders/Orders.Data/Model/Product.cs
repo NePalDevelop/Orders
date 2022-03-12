@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Orders.Data.Model
+﻿namespace Orders.Data.Model
 {
     public class Product
     {
